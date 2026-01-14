@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F5F1E8;
+  --foreground: #1F1F1F;
+  --card: #FFF8EA;
+  --accent: #8B0000;
+  
+  /* Safe fallback fonts */
+  --font-serif: 'Times New Roman', serif;
+  --font-sans: 'Arial', sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+@layer utilities {
+  .shadow-paper {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}

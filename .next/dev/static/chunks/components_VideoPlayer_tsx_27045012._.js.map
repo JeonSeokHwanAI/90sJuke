@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///E:/Project/vibecode/90sJuke/components/VideoPlayer.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport YouTube from 'react-youtube';\r\n\r\nexport default function VideoPlayer({ videoId }: { videoId: string }) {\r\n    const opts = {\r\n        height: '100%',\r\n        width: '100%',\r\n        playerVars: {\r\n            autoplay: 0,\r\n        },\r\n    };\r\n\r\n    return (\r\n        <div className=\"relative pb-[56.25%] h-0 overflow-hidden border border-[var(--foreground)] shadow-paper mb-8 bg-black\">\r\n            <div className=\"absolute top-0 left-0 w-full h-full\">\r\n                <YouTube\r\n                    videoId={videoId}\r\n                    opts={opts}\r\n                    className=\"w-full h-full\"\r\n                    iframeClassName=\"w-full h-full\"\r\n                />\r\n            </div>\r\n        </div>\r\n    );\r\n}\r\n"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAIe,SAAS,YAAY,EAAE,OAAO,EAAuB;IAChE,MAAM,OAAO;QACT,QAAQ;QACR,OAAO;QACP,YAAY;YACR,UAAU;QACd;IACJ;IAEA,qBACI,6LAAC;QAAI,WAAU;kBACX,cAAA,6LAAC;YAAI,WAAU;sBACX,cAAA,6LAAC,wKAAO;gBACJ,SAAS;gBACT,MAAM;gBACN,WAAU;gBACV,iBAAgB;;;;;;;;;;;;;;;;AAKpC;KArBwB"}}]
+}
