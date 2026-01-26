@@ -14,12 +14,12 @@ recommendations:
   - type: "아시아의 청량함"
     desc: "미국에 스타쉽이 있다면, 일본엔 여름을 지배하는 DEEN이 있다"
     slug: "deen-hitomi"
-  - type: "또 다른 위로의 방식"
-    desc: "힘차게 소리치는 팝과 달리, 조용히 등을 밀어주는 응원가"
-    slug: "zard-makenaide"
-  - type: "첫사랑의 기억"
-    desc: "영화 마네킹의 킴 캐트럴만큼이나 우리를 설레게 했던 강수지"
-    slug: "kang-susie-violet"
+  - type: "80년대 신스 웨이브"
+    desc: "A-ha의 신디사이저 사운드와 연결되는 쾌감"
+    slug: "aha-takeonme"
+  - type: "영화 같은 감동"
+    desc: "마네킹 OST만큼이나 설레는 라붐 OST"
+    slug: "richardsanderson-reality"
 ---
 
 ## Scene

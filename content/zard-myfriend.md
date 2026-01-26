@@ -11,18 +11,15 @@ trackInfo:
   release: "1996년 1월 8일 (슬램덩크 애니메이션의 대미를 장식한 마지막 엔딩곡)"
   record: "오리콘 주간 1위, 밀리언 셀러, 애니메이션 '슬램덩크' 4기 엔딩 테마"
 recommendations:
-  - type: "ZARD의 시작과 끝"
-    desc: "청춘의 벅차오름을 느꼈다면, 이제 위로를 받을 차례"
-    slug: "zard-makenaide"
+  - type: "90년대의 엔딩"
+    desc: "슬램덩크로 끝난 일본의 90년대, 서태지로 시작한 한국의 90년대"
+    slug: "seotaiji-iknow"
   - type: "여름의 청량함"
     desc: "슬램덩크의 배경인 '쇼난' 바닷가가 떠오르는 시원한 곡"
     slug: "deen-hitomi"
-  - type: "뜨거운 에너지"
-    desc: "코트 위의 열기만큼이나 뜨거운 미국의 락 스피릿"
-    slug: "starship-nothing"
-  - type: "90년대의 낭만"
-    desc: "채소연(하루코)을 보며 설레던 강백호의 마음과 닮은 곡"
-    slug: "kang-susie-violet"
+  - type: "청춘의 찬가"
+    desc: "우정에 대해 노래하는 또 다른 밴드, 오아시스"
+    slug: "oasis-dontlookback"
 ---
 
 ## Scene

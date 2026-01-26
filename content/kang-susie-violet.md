@@ -11,18 +11,15 @@ trackInfo:
   release: "1990년 4월 (90년대의 문을 여는 기념비적인 데뷔곡)"
   record: "MBC 10대 가수 가요제 신인상, 당시 남학생 책받침 지분율 압도적 1위"
 recommendations:
-  - type: "바다 건너 청순의 아이콘"
-    desc: "일본에 'ZARD'가 있다면 한국엔 '강수지'가 있었다"
-    slug: "zard-makenaide"
-  - type: "90년대 말의 청순 계보"
-    desc: "강수지의 계보를 잇는 90년대 후반의 '국민 여동생'"
-    slug: "hirosue-maji"
-  - type: "같은 감성의 팝"
-    desc: "첫사랑의 설렘을 팝으로 듣는다면 바로 이 곡"
-    slug: "starship-nothing"
-  - type: "남성 보컬 버전의 청량함"
-    desc: "보랏빛 향기만큼이나 시원하고 맑은 일본의 여름 노래"
-    slug: "deen-hitomi"
+  - type: "첫사랑의 추억"
+    desc: "설렘 뒤에 찾아오는 아련함, 이문세의 옛사랑"
+    slug: "leemoonsae-oldlove"
+  - type: "바다 건너 청순"
+    desc: "한국에 강수지가 있다면, 일본엔 마츠 타카코가 있다"
+    slug: "matsutakako-tomorrow"
+  - type: "책받침 라이벌"
+    desc: "소피 마르소(라붐)의 청순함과 닮은 꼴"
+    slug: "richardsanderson-reality"
 ---
 
 ## Scene

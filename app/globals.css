@@ -7,10 +7,15 @@
   --foreground: #1F1F1F;
   --card: #FFF8EA;
   --accent: #8B0000;
-  
+
   /* Safe fallback fonts */
   --font-serif: 'Times New Roman', serif;
   --font-sans: 'Arial', sans-serif;
+}
+
+html {
+  font-size: 20px;
+  /* Scale up entire UI to match deployed version */
 }
 
 body {
@@ -21,7 +26,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
 }
 

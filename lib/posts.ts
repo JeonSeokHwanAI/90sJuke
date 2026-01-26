@@ -49,13 +49,15 @@ export function getAllPosts(): PostData[] {
     });
 
     // Sort posts by year (newest first)
-    return allPostsData.sort((a, b) => {
-        if (a.year < b.year) {
-            return 1;
-        } else {
-            return -1;
-        }
-    });
+    return allPostsData
+        .filter(post => post.title) // Filter out validation failures (empty files)
+        .sort((a, b) => {
+            if (a.year < b.year) {
+                return 1;
+            } else {
+                return -1;
+            }
+        });
 }
 
 export function getPostBySlug(slug: string): PostData | null {
