@@ -1,4 +1,5 @@
 import { getAllPosts, getPostBySlug, getRawPostContent } from '@/lib/posts';
+import { kv } from '@vercel/kv';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
@@ -34,6 +35,9 @@ export default async function SongPage({ params }: PageProps) {
     const post = getPostBySlug(slug);
     const rawContent = getRawPostContent(slug);
 
+    // Check for override video ID in Vercel KV
+    const overrideId = await kv.get<string>(`video:override:${slug}`);
+
     if (!post || !rawContent) {
         notFound();
     }
@@ -64,7 +68,12 @@ export default async function SongPage({ params }: PageProps) {
             </header>
 
             {/* Video Player */}
-            <VideoPlayer videoId={post.youtubeId} />
+            <VideoPlayer
+                initialVideoId={overrideId || post.youtubeId}
+                slug={slug}
+                artist={post.artist}
+                title={post.title}
+            />
 
             {/* Track Info */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 p-6 bg-[var(--card)] border border-[var(--foreground)] shadow-paper items-start">
