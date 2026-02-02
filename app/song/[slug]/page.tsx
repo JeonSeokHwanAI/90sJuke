@@ -1,8 +1,9 @@
-import { getAllPosts, getPostBySlug } from '@/lib/posts';
+import { getAllPosts, getPostBySlug, getRawPostContent } from '@/lib/posts';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import VideoPlayer from '@/components/VideoPlayer';
+import WikiEditor from '@/components/WikiEditor';
 import type { Metadata } from 'next';
 
 interface PageProps {
@@ -31,13 +32,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function SongPage({ params }: PageProps) {
     const { slug } = await params;
     const post = getPostBySlug(slug);
+    const rawContent = getRawPostContent(slug);
 
-    if (!post) {
+    if (!post || !rawContent) {
         notFound();
     }
 
     return (
-        <article className="max-w-3xl mx-auto">
+        <article className="max-w-3xl mx-auto relative">
+            <WikiEditor slug={slug} initialContent={rawContent} />
             <nav className="mb-8 font-serif">
                 <Link
                     href="/"

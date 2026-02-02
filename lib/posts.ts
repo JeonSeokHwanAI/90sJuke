@@ -75,3 +75,12 @@ export function getPostBySlug(slug: string): PostData | null {
         return null;
     }
 }
+
+export function getRawPostContent(slug: string): string | null {
+    try {
+        const fullPath = path.join(postsDirectory, `${slug}.md`);
+        return fs.readFileSync(fullPath, 'utf8');
+    } catch (err) {
+        return null;
+    }
+}
